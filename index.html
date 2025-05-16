@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,31 +13,41 @@
     <script type="module" src="./assets/js/route.js" defer></script>
 </head>
 <body>
-    <header>
-        <a href="">
-            <img src="./assets/images/logo (2).png" width="300" height="150" alt="logo" srcset="">
-        </a>
-        <div class="search-view" data-search-view>
-
-            <div class="search-wrapper">
-                <input type="search" name="search" id="search" placeholder="Buscar cidade..." autocomplete="off" class="search-field" data-search-field>
-                <span class="m-icon">search</span>
-
-                <button class="icon-btn leading- icon has-state" aria-label="close search" data-search-toggler>
-                    <span class="m-icon">arrow_back</span>
-                </button>
-            </div>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo (2).png" width="300" height="150" alt="logo" srcset="">
+            </a>
+            <div class="search-view" data-search-view>
+                <div class="search-wrapper">
+                    <input type="search" name="search" id="search" placeholder="Buscar cidade..." autocomplete="off" class="search-field" data-search-field>
+                    <span class="m-icon">search</span>
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon">arrow_back</span>
+                    </button>
+                </div>
             
-            <div class="search-result">
-                <ul class="view-list" data-search-list>
-                    <li class="view-item">
-                        <span class="m-icon">location_on</span>
-                        <div>
-                            <p class="item-title">Londres</p>
-                            <p class="label-2 item-subtitle">Estado de Londres, UK</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="search-result">
+                    <ul class="view-list" data-search-list>
+                        <li class="view-item">
+                            <span class="m-icon">location_on</span>
+                            <div>
+                                <p class="item-title">Londres</p>
+                                <p class="label-2 item-subtitle">Estado de Londres, UK</p>
+                            </div>
+                            <a href="#" class="item-link has-state" data-search-toggler=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler="">
+                    <span class="m-icon icon">search</span>
+                </button>
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn disabled>
+                    <span class="m-icon">my_location</span>
+                    <span class="span">Localização atual</span>
+                </a>
             </div>
         </div>
         
